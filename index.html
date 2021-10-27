@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile page component </title>
+    <link rel="icon" href="images/favicon-32x32.png" sizes="32x32" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style> 
+         *{
+             box-sizing: border-box;
+         }
+         body{
+             font-family: "Kumbh Sans", sans-serif;;    
+         }
+         .container{
+          background-color: hsl(185, 75%, 39%);
+         background-image: url(../images/bg-pattern-top.svg);
+         height: 100vh;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+          align-items: center;
+         text-align: center;
+         }
+        .division{
+            width: 350px;
+            background-color: white;
+            border-radius: 20px;
+            overflow: hidden;
+           text-align: center;
+            box-shadow: 0px 1px 50px 0px rgba(0, 0, 0, 0.1);
+        }
+        .cardarea{
+            background-image: url("images/bg-pattern-card.svg");
+            background-size: cover;
+            height: 150px;
+        }
+        .cardbody{
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         align-items: center;
+        margin-bottom: 25px;
+        }
+       .trip-cls{
+        position: relative;
+        margin-top:-15%;
+        width:100px;
+        height: 100px;
+        overflow: hidden;
+        margin-bottom: 25px;
+        border: 5px solid white;
+        border-radius: 50%;
+    }
+
+     .personalname{
+         font-family:  "kumbh sans", sans-serif;
+         font-weight: 700 ;
+         color:hsl(229, 23%, 23%); 
+         font-size: 1.1rem;   
+     
+     }
+      
+     .age {
+         font-family:"kumbh sans", sans-serif ;
+         font-weight: 400;
+         font-size: 1rem;
+         color: hsl(227, 10%, 46%);
+         opacity: 1;
+     }
+    .loc {
+        font-family:"kumbh sans", sans-serif ;
+         font-weight: 400;
+         font-size: 1rem;
+         color: hsl(0, 0%, 59%);
+         opacity: 1;
+    }
+    .cardfooter {
+        border-top: .25px hsl(0, 0%, 59%) solid;
+    }
+    .datapart{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          padding: 30px 0px 20px 0px;
+    }
+
+     .dataitems h3{
+        font-family:  "kumbh sans", sans-serif;
+        font-weight: 700;
+         color:hsl(229, 23%, 23%); 
+         font-size: 1rem;
+         text-align: center; 
+     }
+     .dataitems span{
+         font-family:"kumbh sans", sans-serif ;
+         font-weight: 400;
+         font-size: .6rem;
+         color: hsl(0, 0%, 59%);
+         letter-spacing: 1px;
+         text-align: center;
+     }
+    </style> 
+
+</head>
+<body>
+    <section class="container"> 
+       <div class="division">
+           <div class="cardarea"> 
+
+           </div> 
+
+  
+    <div class="cardbody">
+        <div class="trip-cls"> 
+            <img  src="images/image-victor.jpg" alt="Victor picture" class="imgr"/>
+        </div>
+    </div>
+ 
+    <div class="two"> 
+        <h2 class="personalname"> Victor Crest <span class="age"> 26</span></h2>
+        <p class ="loc"> London </p>
+    </div> 
+    
+
+        <div class="cardfooter"> 
+        <div class="datapart">
+               <div class="dataitems">
+                <h3 > 80k</h3>
+                <span> Followers</span>
+              </div>
+              <div class="dataitems">
+                <h3> 803k</h3>
+                <span> Likes </span>
+              </div>
+              <div class="dataitems"> 
+                <h3> 1.4k</h3>
+                <span>Photos</span>
+              </div>  
+        </div>
+     
+
+
+ </div> 
+</section>
+    
+</body>
+</html>
